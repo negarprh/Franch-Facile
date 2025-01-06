@@ -1,4 +1,3 @@
-
 # 🌍 **French-Facile**  
 _A modern e-learning platform to master the beauty of the French language._
 
@@ -12,16 +11,16 @@ _A modern e-learning platform to master the beauty of the French language._
 ## ✨ **Features**  
 - 🧠 **AI-Driven Learning**: Personalized exercises tailored to your progress.  
 - 📝 **Interactive Lessons**: Engaging content to improve reading, writing, and speaking skills.  
-- 🌐 **Responsive Design**: Modern UI built with React and Tailwind CSS.  
+- 🌐 **Responsive Design**: Modern UI built with React and CSS.  
 - 🎯 **Gamified Experience**: Earn achievements and track progress with leaderboards.  
 
 ---
 
 ## 🛠️ **Tech Stack**  
 - **Backend**: Python, Django, Django REST Framework  
-- **Frontend**: React, Tailwind CSS  
+- **Frontend**: React, CSS  
 - **Database**: SQLite  
-- **Machine Learning**: Pytorch
+- **Machine Learning**: PyTorch  
 
 ---
 
@@ -49,9 +48,15 @@ Master French at your own pace with cutting-edge technology and an intuitive lea
 
 ---
 
-## 🤝 **Contributing**  
-Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
+## 👥 **Contributors**  
+This project is being developed by:
+
+- **[Negar Pirasteh](https://github.com/negarprh)**: Backend Developer (Database, API development, and overall backend architecture)
+- **[Kosar Akbarshah](https://github.com/KosarAkbarshah)**: Frontend Developer (UI/UX design and React integration)
+
+If you'd like to contribute, feel free to fork the repository, make improvements, and submit a pull request.
 
 ---
 
-Would you like to customize this further?
+## 🤝 **Contributing**  
+Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
