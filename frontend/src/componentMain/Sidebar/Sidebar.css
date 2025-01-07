@@ -79,7 +79,7 @@
 
             /* Hover Effect */
             &:hover {
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
                 /* Optional hover effect for li */
 
             }
@@ -123,6 +123,37 @@
     justify-content: center;
     align-items: center;
     margin: 10px auto;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    >p {
+        text-align: center;
+        font-size: 14px;
+        color: rgb(88, 86, 86);
+    }
+
+    >.quote-icon {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #5E17EB;
+        animation: spin 3s infinite linear;
+    }
+
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.5);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
 
 }
