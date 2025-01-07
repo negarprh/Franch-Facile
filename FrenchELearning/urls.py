@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from french_app import views
-from french_app.views import get_lessons  # Import the API view
+from french_app.views import get_lessons, fetch_quote
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # Admin panel
     path('', views.index, name='index'),  # React app entry point
     path('api/lessons/', get_lessons, name='get_lessons'),  # API endpoint for lessons
+    path('api/quote/', fetch_quote, name='fetch_quote'),
 ]

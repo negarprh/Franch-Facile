@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './sidebar.css'
 import { assets } from '../../assets/assets'
 import { SiHomeadvisor } from "react-icons/si";
@@ -9,6 +9,33 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { HiSparkles } from "react-icons/hi2";
 
 const Sidebar = () => {
+    const [quote, setQuote] = useState("");
+    const [author, setAuthor] = useState("");
+    const [error, setError] = useState("");
+
+    // Fetch the quote from the API
+    useEffect(() => {
+        fetch('/api/quote/') // Make sure your backend API is running
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setQuote(data.quote || "No quote found.");
+                setAuthor(data.author || "Unknown");
+            })
+            .catch((error) => {
+                setError("Failed to fetch quote");
+                console.error("Error fetching quote:", error);
+            });
+    }, []);
+
+
+
+
+
     return (
         <div className='sidebar'>
 
@@ -29,7 +56,16 @@ const Sidebar = () => {
 
             <div className="rand-quote">
                 <span className='quote-icon'><HiSparkles /></span>
-                <p>"The best way to predict the future is to create it." - Abraham Lincoln</p>
+
+                {error ? (
+                    <p className="error">{error}</p>
+                ) : (
+                    <>
+                        <p>{quote}</p>
+                        {/*<p>{author}</p>*/}
+                    </>
+                )}
+
             </div>
         </div>
     )
