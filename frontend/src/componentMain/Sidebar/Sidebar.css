@@ -134,7 +134,7 @@
     >.quote-icon {
         font-size: 20px;
         margin-right: 10px;
-        color: #5E17EB;
+        color: #ebc417;
         animation: spin 3s infinite linear;
     }
 
@@ -147,7 +147,7 @@
     }
 
     50% {
-        transform: scale(1.5);
+        transform: scale(1.7);
 
     }
 
@@ -157,3 +157,6 @@
     }
 
 }
+
+
+@media
