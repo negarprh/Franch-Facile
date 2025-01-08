@@ -13,6 +13,13 @@ const Sidebar = () => {
     const [author, setAuthor] = useState("");
     const [error, setError] = useState("");
 
+    /////menu toggle
+    const [isOpen, setIsOpen] = useState(false)
+    const toggleMenu = () => {
+        setIsOpen(!isOpen); // Toggle menu state
+
+    }
+
     // Fetch the quote from the API
     useEffect(() => {
         fetch('/api/quote/') // Make sure your backend API is running
@@ -37,13 +44,47 @@ const Sidebar = () => {
 
 
     return (
-        <div className='sidebar'>
+        <>
+            <div className='sidebar'>
 
-            <div className='logo'>
-                <img src={assets.logo} alt="" />
+                <div className='logo'>
+                    <img src={assets.logo} alt="" />
+                </div>
+                <nav className='nav'>
+                    <ul>
+                        <li><SiHomeadvisor />Home</li>
+                        <li><SiGitbook />Lesson</li>
+                        <li><SiQuizlet /> Quiz</li>
+                        <li><GiProgression />Progress</li>
+                        <li><IoSettingsOutline />Settings</li>
+
+                    </ul>
+                </nav>
+
+
+
+
+                <div className="rand-quote">
+                    <span className='quote-icon'><HiSparkles /></span>
+
+                    {error ? (
+                        <p className="error">{error}</p>
+                    ) : (
+                        <>
+                            <p>{quote}</p>
+                            {/*<p>{author}</p>*/}
+                        </>
+                    )}
+
+                </div>
             </div>
-            <nav className='nav'>
-                <ul>
+
+            <nav className='navsmall'>
+                <div className='line' onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul className={`menu ${isOpen ? 'open' : 'close'}`}>
                     <li><SiHomeadvisor />Home</li>
                     <li><SiGitbook />Lesson</li>
                     <li><SiQuizlet /> Quiz</li>
@@ -52,22 +93,12 @@ const Sidebar = () => {
 
                 </ul>
             </nav>
+        </>
 
 
-            <div className="rand-quote">
-                <span className='quote-icon'><HiSparkles /></span>
 
-                {error ? (
-                    <p className="error">{error}</p>
-                ) : (
-                    <>
-                        <p>{quote}</p>
-                        {/*<p>{author}</p>*/}
-                    </>
-                )}
 
-            </div>
-        </div>
+
     )
 }
 

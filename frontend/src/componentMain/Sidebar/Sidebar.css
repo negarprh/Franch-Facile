@@ -77,18 +77,20 @@
 
 
 
-            /* Hover Effect */
+
             &:hover {
-                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-                /* Optional hover effect for li */
+                /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+                color: #5E17EB;
+
 
             }
 
             &:hover svg {
 
-                /* Change icon background on hover */
+
                 transform: rotate(20deg);
-                /* Slightly enlarge the icon */
+                color: #5E17EB;
+
 
             }
 
@@ -124,6 +126,7 @@
     align-items: center;
     margin: 10px auto;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    overflow: hidden;
 
     >p {
         text-align: center;
@@ -158,5 +161,84 @@
 
 }
 
+@media (min-width: 992px) {
+    .navsmall {
+        display: none;
+    }
+}
 
-@media
+
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navsmall {
+        width: 100%;
+        background-color: #efefef5e;
+        backdrop-filter: blur(10px);
+
+
+
+        >ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: .8s ease;
+            overflow: hidden;
+
+
+
+
+            >li {
+                font-size: 18px;
+                margin-top: 15px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 90%;
+                transition: .8s ease;
+                overflow: hidden;
+
+                &:hover {
+                    color: #5E17EB;
+                }
+
+                >svg {
+                    margin-right: 10px;
+
+                }
+            }
+        }
+
+    }
+
+    .navsmall .line {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+
+    }
+
+    .navsmall .line span {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        margin: 4px 0;
+        border-radius: 2px;
+
+    }
+
+
+    .menu.open {
+        max-height: 400px;
+    }
+
+    .menu.close {
+        max-height: 0;
+    }
+}
