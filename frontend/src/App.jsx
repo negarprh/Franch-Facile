@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./componentMain/Sidebar/Sidebar";
+import Main from "./componentMain/Main/Main";
+import './index.css';
 
 
 function App() {
@@ -7,7 +9,10 @@ function App() {
 
     return (
         <>
-            <Sidebar />
+            <div className="layout">
+                <Sidebar />
+                <Main />
+            </div>
         </>
 
     )
