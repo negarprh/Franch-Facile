@@ -14,6 +14,12 @@ const Main = () => {
                 </span>
                 <img className='icon2' src={assets.book} alt="" />
             </div>
+
+            <div className="mainCards">
+                <div className="card1"></div>
+                <div className="card2"></div>
+                <div className="card3"></div>
+            </div>
         </div>
     )
 }
