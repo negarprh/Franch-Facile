@@ -94,7 +94,6 @@
 
 .mainCards {
     width: 96%;
-    border: 2px solid green;
     width: 96%;
     display: flex;
     flex-wrap: wrap;
@@ -103,8 +102,24 @@
 
     >.card1 {
         width: 30.3%;
-        height: 400px;
-        border: 2px solid black;
+        height: 300px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         border-radius: 20px;
     }
+
+    >.card2 {
+        width: 30.3%;
+        height: 300px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        border-radius: 20px;
+    }
+
+    >.card3 {
+        width: 30.3%;
+        height: 300px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+        border-radius: 20px;
+    }
+
 }
