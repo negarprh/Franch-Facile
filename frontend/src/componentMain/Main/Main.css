@@ -105,6 +105,17 @@
         height: 300px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         border-radius: 20px;
+        background-image: url(../../assets/grammer-icon.png);
+        background-size: cover;
+        background-position: center;
+        transition: .5s;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: none;
+            transform: scale(1.05);
+
+        }
     }
 
     >.card2 {
@@ -118,7 +129,6 @@
         width: 30.3%;
         height: 300px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
         border-radius: 20px;
     }
 
