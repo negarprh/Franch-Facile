@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from french_app import views
-from french_app.views import get_lessons, fetch_quote
+from french_app.views import get_lessons, fetch_quote , fetch_wiktionary_data
 
 
 urlpatterns = [
@@ -25,4 +25,5 @@ urlpatterns = [
     path('', views.index, name='index'),  # React app entry point
     path('api/lessons/', get_lessons, name='get_lessons'),  # API endpoint for lessons
     path('api/quote/', fetch_quote, name='fetch_quote'),
+    path("fetch-word/", fetch_wiktionary_data, name="fetch_word_data")
 ]
