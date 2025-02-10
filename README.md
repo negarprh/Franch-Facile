@@ -51,8 +51,8 @@ Master French at your own pace with cutting-edge technology and an intuitive lea
 ## 👥 **Contributors**  
 This project is being developed by:
 
-- **[Negar Pirasteh](https://github.com/negarprh)**: Backend Developer (Database, API development, and overall backend architecture)
-- **[Kosar Akbarshah](https://github.com/KosarAkbarshah)**: Frontend Developer (UI/UX design and React integration)
+- **[Negar Pirasteh](https://github.com/negarprh)**: Backend Developer (Django, Python, Database, API development, and overall backend architecture)
+- **[Kosar Akbarshah](https://github.com/KosarAkbarshah)**: Frontend Developer (React integration, CSS, UI/UX design and )
 
 If you'd like to contribute, feel free to fork the repository, make improvements, and submit a pull request.
 
