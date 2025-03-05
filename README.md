@@ -54,10 +54,3 @@ This project is being developed by:
 
 - **[Negar Pirasteh](https://github.com/negarprh)**: Backend Developer (Django, Python, Database, API development, and overall backend architecture)
 - **[Kosar Akbarshah](https://github.com/KosarAkbarshah)**: Frontend Developer (React integration, CSS, UI/UX design and )
-
-If you'd like to contribute, feel free to fork the repository, make improvements, and submit a pull request.
-
----
-
-## 🤝 **Contributing**  
-Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
