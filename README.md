@@ -10,7 +10,6 @@ _A modern e-learning platform to master the beauty of the French language._
 ---
 
 ## ✨ **Features**  
-- 🧠 **AI-Driven Learning**: Personalized exercises tailored to your progress.  
 - 📝 **Interactive Lessons**: Engaging content to improve reading, writing, and speaking skills.  
 - 🌐 **Responsive Design**: Modern UI built with React and CSS.  
 - 🎯 **Gamified Experience**: Earn achievements and track progress with leaderboards.  
@@ -21,7 +20,6 @@ _A modern e-learning platform to master the beauty of the French language._
 - **Backend**: Python, Django, Django REST Framework  
 - **Frontend**: React, CSS  
 - **Database**: SQLite  
-- **Machine Learning**: PyTorch  
 
 ---
 
